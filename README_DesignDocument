@@ -18,3 +18,5 @@ So with that the following functions sound like a reasonable thing for iteration
 2. The second function should be something along the lines where it gets the data from the recent changes made on a said url. Here we can use some of the same code we had for the weather app and we can disable the SSL verification. After that it should just be a json.load
 
 3. We can make a third function that would display the results of the queries that we ask. We can pass in the args created from the above two functions into this function via the main function, so something along the lines of sending the Article_Name and data.
+
+4. Finally there would be a main function that acts as a handler and is called.

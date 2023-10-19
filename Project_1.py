@@ -36,6 +36,7 @@ def display_recent_changes(data, article_name):
 
 def main():
     article_name = input("Please enter the Wikipedia article name: ").strip()
+    article_name = article_name.replace(' ', '%20')
     
     if not article_name:
         print("You must provide an article name.")
