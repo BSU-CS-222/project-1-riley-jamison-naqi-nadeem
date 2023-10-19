@@ -2,16 +2,8 @@ import json
 import ssl
 from urllib.request import urlopen
 
-def get_recent_changes_url(article_name):
-    base_url = f"https://en.wikipedia.org/w/api.php"
-    query_params = (
-        f"action=query&format=json&prop=revisions&titles={article_name}"
-        f"&rvprop=timestamp|user&rvlimit=30&redirects"
-    )
-    full_url = f"{base_url}?{query_params}"
-    return full_url
-
-def get_recent_changes_data(changes_url):
+def get_recent_changes_data(article_name):
+    changes_url = f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&titles={article_name}&rvprop=timestamp|user&rvlimit=30&redirects"
     context = ssl._create_unverified_context()
     response = urlopen(changes_url, context=context)
     return json.loads(response.read())
@@ -42,8 +34,7 @@ def main():
         print("You must provide an article name.")
         exit(1)
     
-    changes_url = get_recent_changes_url(article_name)
-    data = get_recent_changes_data(changes_url)
+    data = get_recent_changes_data(article_name)
     exit_code = display_recent_changes(data, article_name)
     exit(exit_code)
 
