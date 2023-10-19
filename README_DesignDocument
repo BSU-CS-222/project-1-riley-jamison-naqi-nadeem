@@ -10,7 +10,7 @@ Known requirements for iteration 1 are as follows:
 
 Approach towards implementation:
 
-So for this project, I think a good idea would be to figure out what the implementation should look like in terms of what kind of functions we expect to make first before anything.
+So for this project, we think a good idea would be to figure out what the implementation should look like in terms of what kind of functions we expect to make first before anything.
 So with that the following functions sound like a reasonable thing for iteration number 1:
 
 1. Have a function that handles getting the URL for the program. The URL should be coming in as an argument from the main function which would request input. This function should then format and create the full URL and then return that URL as its own variable.

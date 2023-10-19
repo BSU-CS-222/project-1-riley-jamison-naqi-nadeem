@@ -16,5 +16,5 @@ class TestProject1(unittest.TestCase):
         url = get_wikipedia_url(article_name)
         self.assertEqual(url, expected_url, "URL should match the expected one.")
 
-if __name__ == "main":
+if __name__ == "__main__":
     unittest.main()
