@@ -1,9 +1,5 @@
 import unittest
-import Project_1
-
-def get_wikipedia_url(article_name):
-    formatted_name = article_name.replace(' ', '%20')
-    return f"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&titles={formatted_name}&rvprop=timestamp|user&rvlimit=30&redirects"
+from Project_1 import get_wikipedia_url
 
 class TestProject1(unittest.TestCase):
     def test_get_wikipedia_url(self):
