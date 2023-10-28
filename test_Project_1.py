@@ -1,5 +1,6 @@
 import unittest
-from Project_1 import get_wikipedia_url
+from unittest.mock import patch
+from Project_1 import get_wikipedia_url, fetch_wikipedia_data
 
 class TestProject1(unittest.TestCase):
     def test_get_wikipedia_url(self):
