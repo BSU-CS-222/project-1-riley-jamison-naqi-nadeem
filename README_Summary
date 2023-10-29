@@ -1,0 +1,13 @@
+Project Title: Wikipedia Recent Edits                   Team Members: - Riley Jamison
+                                                                      - Naqi Nadeem
+                                                                        
+Project Description: The user is able to use the command line or a GUI to search the 30 most recent edits of a Wikipedia article. They can use this program in two different ways: GUI and command line.
+
+Project Objectives: 
+1. The URL must be formatted correctly after user inputs what they want to search. Any spaces must be replaced to fit a URL's format.
+2. It must handle errors like: if the user inputs nothing, if the user inputs an invalid page, and if there is a network error. 
+3. When searching recent edits, key information such as the username and timestamp should be organized and formatted for easy readability. 
+4. Creating a user friendly menu to choose the way you want to search.
+
+Entry Points: We have provided a user friendly menu where you can choose if you want to search through the command line or the GUI. Once running the program you will be given the options. 
+

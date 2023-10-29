@@ -30,8 +30,11 @@ def parse_wikipedia_data(data, article_name):
 
         if 'redirects' in data['query']:
             result_lines.insert(0, f"Redirected to {page_info['title']}")
+            
 
         return '\n'.join(result_lines)
+
+    return f"No Wikipedia data found for {article_name}"  
 
 def create_gui():
     def search_callback():
@@ -90,4 +93,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
