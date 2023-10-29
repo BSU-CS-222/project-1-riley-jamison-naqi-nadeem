@@ -1,0 +1,22 @@
+Design plans for Project 1:
+
+Known requirements for iteration 1 are as follows:
+1. Run on command line, take the input of a wikipedia page, and output a list of 30 or however many recent changes, or an exception message.
+2. For the wikipedia API client, find a way to send a GET request to the endpoint for revisions made and retreive the data on those specified articles.
+3. Find a way for the data to be parsed, with users and timestamps.
+4. Display the information retreived.
+5. Error handling for what happens based on the situation.
+
+
+Approach towards implementation:
+
+So for this project, we think a good idea would be to figure out what the implementation should look like in terms of what kind of functions we expect to make first before anything.
+So with that the following functions sound like a reasonable thing for iteration number 1:
+
+1. Have a function that handles getting the URL for the program. The URL should be coming in as an argument from the main function which would request input. This function should then format and create the full URL and then return that URL as its own variable.
+
+2. The second function should be something along the lines where it gets the data from the recent changes made on a said url. Here we can use some of the same code we had for the weather app and we can disable the SSL verification. After that it should just be a json.load
+
+3. We can make a third function that would display the results of the queries that we ask. We can pass in the args created from the above two functions into this function via the main function, so something along the lines of sending the Article_Name and data.
+
+4. Finally there would be a main function that acts as a handler and is called.
